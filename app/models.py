@@ -59,3 +59,5 @@ class OldOrder(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField()
 
+class Test(models.Model):
+    name = models.CharField(max_length=255)
