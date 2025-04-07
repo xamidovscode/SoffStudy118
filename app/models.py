@@ -28,7 +28,7 @@ class Order(models.Model):
         Product, related_name="orders", on_delete=models.CASCADE
     )
     quantity = models.PositiveIntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.IntegerField(default=0)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField()
@@ -54,7 +54,7 @@ class OldOrder(models.Model):
         Product, related_name="old_orders", on_delete=models.CASCADE
     )
     quantity = models.PositiveIntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.IntegerField(default=0)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField()
