@@ -1,3 +1,4 @@
+from django.db.models import Count
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from app.models import *
@@ -110,6 +111,18 @@ def question17(request):
     create_order.save()
 
     return Response("Success")
+
+
+@api_view(["GET"])
+def question20(request):
+    orders_count = Order.objects.values('customer_id').annotate(count=Count('id'))
+
+    result = []
+    for customer in orders_count:
+        result.append({
+            "customer_name": customer.count,
+        })
+    return Response(result)
 
 
 
