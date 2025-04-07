@@ -11,9 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import dotenv_values
 
-config = dotenv_values(".env")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,13 +33,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-<<<<<<< HEAD
-    'app',
     'app_nozima',
-=======
     'app_d',
     'app'
->>>>>>> 33bcc09be74558d1162681b2358ca6e8bf7d4c4d
 ]
 
 MIDDLEWARE = [
