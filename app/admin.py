@@ -12,7 +12,11 @@ class AdminOrder(admin.ModelAdmin):
     list_display = ('id', 'customer_name', 'product', 'quantity', 'price')
     list_display_links = ('id', 'customer_name', 'product', 'quantity', 'price')
 
+@admin.register(OldOrder)
+class AdminOldOrder(admin.ModelAdmin):
+    list_display = ('id', 'customer_name', 'product', 'quantity', 'price')
+    list_display_links = ('id', 'customer_name', 'product', 'quantity', 'price')
+
 
 admin.site.register(User)
-admin.site.register(OldOrder)
 

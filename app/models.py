@@ -7,6 +7,9 @@ class Product(models.Model):
     price = models.IntegerField(default=0)
     discount = models.IntegerField(default=0)
 
+    def __str__(self):
+            return self.name
+
 
 class User(models.Model):
     username = models.CharField(max_length=255)
