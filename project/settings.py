@@ -35,8 +35,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+<<<<<<< HEAD
     'app',
     'app_nozima',
+=======
+    'app_d',
+    'app'
+>>>>>>> 33bcc09be74558d1162681b2358ca6e8bf7d4c4d
 ]
 
 MIDDLEWARE = [

@@ -4,7 +4,15 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 3.8 virtualenv at ~/SoffStudy118/venv" jdkType="Python SDK" />
+=======
+<<<<<<< HEAD
+    <orderEntry type="jdk" jdkName="Python 3.12 virtualenv at ~/Documents/Django Start/SoffStudy118/venv" jdkType="Python SDK" />
+=======
+    <orderEntry type="jdk" jdkName="Python 3.13 (django3)" jdkType="Python SDK" />
+>>>>>>> 30bdec4ab905bbe9d633531a5cbaaa1a22efa7aa
+>>>>>>> 33bcc09be74558d1162681b2358ca6e8bf7d4c4d
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

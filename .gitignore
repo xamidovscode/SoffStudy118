@@ -1,3 +1,7 @@
 venv/
 *.sqlite3
+<<<<<<< HEAD
 order_changes.log
+=======
+.idea
+>>>>>>> 33bcc09be74558d1162681b2358ca6e8bf7d4c4d
