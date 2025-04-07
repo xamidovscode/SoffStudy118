@@ -9,6 +9,7 @@ urlpatterns = [
     path("question4/", views.question_four),
     path("question5/", views.question_5),
     path("question9/<int:pk>/", views.question_9),
+    #xatolik
 
 ]
 
