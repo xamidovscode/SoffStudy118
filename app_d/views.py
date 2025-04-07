@@ -83,9 +83,29 @@ def question12(request, **kwargs):
     return Response({"customer_id": old_order.id})
 
 
-# @api_view(['POST'])
-# def question13(request, **kwargs):
-#     pk = kwargs.get('pk')
+@api_view(['POST'])
+def question13(request, **kwargs):
+    pk = kwargs.get('pk')
+
+    order = Order.objects.filter(id=pk).first()
+
+    if not order:
+        return Response(
+            data={"pk": "Order not Fount"},
+            status=400
+        )
+
+    if order.status=="completed":
+        return Response(
+            data={"error": "Completed statusdagi buyurtma o‘chirib bo‘lmaydi"}
+        )
+
+    order.delete()
+    return Response(
+        data={"delete":"O'chirildi"},
+        status=200
+    )
+
 
 
 
@@ -123,7 +143,5 @@ def question20(request):
             "customer_name": customer.count,
         })
     return Response(result)
-
-
 
 
